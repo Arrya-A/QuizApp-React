@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #436971;
+  /* color: #FCFAEE ; */
+}
+
+.result{
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 600;
+}
