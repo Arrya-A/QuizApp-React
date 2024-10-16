@@ -5,11 +5,11 @@
 
 body {
   height: 100vh;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   background-color: #436971;
-  /* color: #FCFAEE ; */
 }
 
-.result{
+.result {
   font-family: "Londrina Sketch", sans-serif;
   font-weight: 600;
 }
