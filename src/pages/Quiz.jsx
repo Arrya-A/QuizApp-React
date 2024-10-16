@@ -49,7 +49,14 @@ const Quiz = () => {
                         <div className="col-12 col-md-8 col-lg-6">
                             {result ?
                                 <div>
-                                    {percentage >= 50 && <ConfettiExplosion force={0.6} duration={5000} particleCount={500} />}
+                                    {percentage >= 50 && (
+                                        <>
+                                            <ConfettiExplosion force={0.6} duration={5000} particleCount={300} style={{ position: 'absolute', top: '10%', left: '10%' }} />
+                                            <ConfettiExplosion force={0.6} duration={5000} particleCount={300} style={{ position: 'absolute', top: '10%', right: '10%' }} />
+                                            <ConfettiExplosion force={0.6} duration={5000} particleCount={300} style={{ position: 'absolute', bottom: '10%', left: '10%' }} />
+                                            <ConfettiExplosion force={0.6} duration={5000} particleCount={300} style={{ position: 'absolute', bottom: '10%', right: '10%' }} />
+                                        </>
+                                    )}
                                     <h1 className='text-center mb-3 result text-light' >Congratulations!</h1>
                                     <div className=' border rounded p-4' style={{ backgroundColor: 'rgb(255,255,255,0.7)' }}>
                                         <h3 className='text-center mb-3' style={{ color: percentage >= 50 ? '#28a745' : '#dc3545' }}>You scored {percentage}%</h3>
